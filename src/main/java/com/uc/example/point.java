@@ -1,7 +1,6 @@
 package com.uc.example;
 
-public class point {
-
+public class Point {
     public int x;
     public int y;
 

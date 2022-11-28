@@ -5,17 +5,35 @@ package com.uc.example;
  */
 public class Point {
 
-    public int x;
-    public int y;
+    private final int x;
+    private final int y;
 
     /**
      * Creates a new Point with x and y
+     *
      * @param x position
      * @param y position
      */
-    public Point(int x, int y) {
+    public Point(final int x, final int y) {
         this.x = x;
         this.y = y;
     }
 
+    /**
+     * Get X
+     *
+     * @return x
+     */
+    public int getX() {
+        return x;
+    }
+
+    /**
+     * Get Y
+     *
+     * @return y
+     */
+    public int getY() {
+        return y;
+    }
 }

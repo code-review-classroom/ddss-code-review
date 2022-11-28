@@ -4,9 +4,10 @@ package com.uc.example;
  * This is a Rectangle
  */
 public class Rectangle {
-    private Point origin;
-    private int w;
-    private int h;
+
+    private final Point origin;
+    private final int w;
+    private final int h;
 
     /**
      * Creates a rectangle with a given point of origin
@@ -15,12 +16,8 @@ public class Rectangle {
      * @param w      rectangle width
      * @param h      rectangle height
      */
-    public Rectangle(Point origin, int w, int h) {
-        if (origin == null) {
-            this.origin = new Point(0, 0);
-        } else {
-            this.origin = origin;
-        }
+    public Rectangle(final Point origin, final int w, final int h) {
+        this.origin = origin;
         this.w = w;
         this.h = h;
     }
@@ -31,7 +28,7 @@ public class Rectangle {
      * @param w rectangle width
      * @param h rectangle height
      */
-    public Rectangle(int w, int h) {
+    public Rectangle(final int w, final int h) {
         this.origin = new Point(0, 0);
         this.w = w;
         this.h = h;
@@ -46,14 +43,6 @@ public class Rectangle {
         return origin;
     }
 
-    /**
-     * set origin
-     *
-     * @param origin origin
-     */
-    public void setOrigin(Point origin) {
-        this.origin = origin;
-    }
 
     /**
      * get width
@@ -65,15 +54,6 @@ public class Rectangle {
     }
 
     /**
-     * set width
-     *
-     * @param w width
-     */
-    public void setW(int w) {
-        this.w = w;
-    }
-
-    /**
      * get height
      *
      * @return height
@@ -82,12 +62,4 @@ public class Rectangle {
         return h;
     }
 
-    /**
-     * set height
-     *
-     * @param h height
-     */
-    public void setH(int h) {
-        this.h = h;
-    }
 }

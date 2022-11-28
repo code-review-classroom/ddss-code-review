@@ -13,7 +13,7 @@ public class Hello {
         final Rectangle rectOne = new Rectangle(originOne, RECT_ONE_W, RECT_ONE_H);
         final Rectangle rectTwo = new Rectangle(originTwo, RECT_TWO_W, RECT_TWO_H);
 
-        System.out.println("RectOne origin w:" + rectOne.origin.x);
-        System.out.println("RectTwo origin X:" + rectTwo.origin.x);
+        System.out.println("RectOne origin w:" + rectOne.getOrigin().x);
+        System.out.println("RectTwo origin X:" + rectTwo.getOrigin().x);
     }
 }

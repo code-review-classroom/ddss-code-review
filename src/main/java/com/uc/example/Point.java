@@ -2,12 +2,27 @@ package com.uc.example;
 
 public class Point {
 
-    public int x;
-    public int y;
+    private int _x;
+    private int _y;
 
     public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+        this._x = x;
+        this._y = y;
     }
 
+    public int getX() {
+        return _x;
+    }
+
+    public void setX(int x) {
+        this._x = x;
+    }
+
+    public int getY() {
+        return _y;
+    }
+
+    public void setY(int y) {
+        this._y = y;
+    }
 }

@@ -1,13 +1,13 @@
-package com.uc.example;
+
 
 public class point {
 
-    public int x;
-    public int y;
+    private int x;
+    private int y;
 
-    public point(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public point(int x2, int y2) {
+        this.x = x2;
+        this.y = y2;
     }
 
 }

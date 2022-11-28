@@ -2,12 +2,13 @@ package com.uc.example;
 
 /**
  * Rectangle Class.
- * Contains a class {@link Point} as origin point and height and width variables.
+ * Contains a class {@link Point} as origin point and,
+ * height and width variables.
  */
 public class Rectangle {
     private final Point origin;
-    private final int w;
-    private final int h;
+
+    private final int w, h;
 
     public Rectangle(Point origin, int w, int h) {
         this.origin = origin;
